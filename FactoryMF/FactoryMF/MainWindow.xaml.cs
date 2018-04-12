@@ -24,5 +24,10 @@ namespace FactoryMF
         {
             InitializeComponent();
         }
+
+        private void CreateButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
