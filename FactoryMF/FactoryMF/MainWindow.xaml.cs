@@ -32,7 +32,6 @@ namespace FactoryMF
 
         private void addTextBox_Click(object sender, RoutedEventArgs e)
         {
-
         }
 
         private void addCircle_Click(object sender, RoutedEventArgs e)
