@@ -30,6 +30,7 @@
                     Click="CreateButton_Click"
                     Background="Chocolate"/>
             </StackPanel>
+            <ListBox x:Name="OurListBox"></ListBox>
         </Grid>
         <StackPanel Orientation="Vertical" Margin="0 0 0 0" Height="320">
             <StackPanel Orientation="Vertical">
