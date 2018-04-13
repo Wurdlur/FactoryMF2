@@ -32,7 +32,11 @@ namespace FactoryMF
 
         private void addTextBox_Click(object sender, RoutedEventArgs e)
         {
-
+            TextBox tb = new TextBox();
+            tb.Text = textBoxContent.Text;
+            tb.Height = textBoxHeight.Height;
+            tb.Width = textBoxWidth.Width;
+            
         }
 
         private void addCircle_Click(object sender, RoutedEventArgs e)
