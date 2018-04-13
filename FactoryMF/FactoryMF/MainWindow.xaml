@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FactoryMF"
         mc:Ignorable="d"
-        Title="FactoryMF" Height="350" Width="525">
+        Title="FactoryMF" Height="360" Width="525">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="6*"/>
@@ -17,11 +17,11 @@
                 <RowDefinition Height="3*"/>
             </Grid.RowDefinitions>
             <StackPanel Orientation="Horizontal" Margin="10" Width="200" Height="80" Grid.Row="1">
-            <StackPanel>
-                <Label FontWeight="Bold">Select a Language</Label>
-                <RadioButton IsChecked="True">C#</RadioButton>
-                <RadioButton>HTML</RadioButton>
-            </StackPanel>
+                <StackPanel>
+                    <Label FontWeight="Bold">Select a Language</Label>
+                    <RadioButton IsChecked="True">C#</RadioButton>
+                    <RadioButton>HTML</RadioButton>
+                </StackPanel>
                 <Button x:Name="CreateButton"
                     Content="Create"
                     Height="30"
@@ -31,6 +31,66 @@
                     Background="Chocolate"/>
             </StackPanel>
         </Grid>
-        
-        </Grid>
+        <StackPanel Orientation="Vertical" Margin="0 0 0 0" Height="320">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <Label >Height</Label>
+                    <TextBox x:Name="textBoxHeight" VerticalAlignment="Center" Width="40"></TextBox>
+                    <Label >Width</Label>
+                    <TextBox x:Name="textBoxWidth" VerticalAlignment="Center" Width="40"></TextBox>
+                    <Label >Top</Label>
+                    <TextBox  x:Name="textBoxTop" VerticalAlignment="Center" Width="40"></TextBox>
+                    <Label >Left</Label>
+                    <TextBox  x:Name="textBoxLeft" VerticalAlignment="Center" Width="40"></TextBox>
+                </StackPanel>
+                <TextBox x:Name="textBoxContent" VerticalAlignment="Center" Margin="5">Add Content Here</TextBox>
+                <Button x:Name="addTextBox" Margin="0 0 0 0" Click="addTextBox_Click">Add Textbox</Button>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="0 5">
+                <StackPanel Orientation="Horizontal">
+                    <Label >Height</Label>
+                    <TextBox x:Name="circleHeight" VerticalAlignment="Center" Width="40"></TextBox>
+                    <Label >Width</Label>
+                    <TextBox x:Name="circleWidth" VerticalAlignment="Center" Width="40"></TextBox>
+                    <Label >Top</Label>
+                    <TextBox  x:Name="circleTop" VerticalAlignment="Center" Width="40"></TextBox>
+                    <Label >Left</Label>
+                    <TextBox  x:Name="circleLeft" VerticalAlignment="Center" Width="40"></TextBox>
+                </StackPanel>
+                <TextBox x:Name="circleContent" VerticalAlignment="Center" Margin="5">Add Content Here</TextBox>
+                <Button x:Name="addCircle" Margin="0 0 0 0" Click="addCircle_Click">Add Circle</Button>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="0 5">
+                <StackPanel Orientation="Horizontal">
+                    <Label >Height</Label>
+                    <TextBox x:Name="labelHeight" VerticalAlignment="Center" Width="40"></TextBox>
+                    <Label >Width</Label>
+                    <TextBox x:Name="labelWidth" VerticalAlignment="Center" Width="40"></TextBox>
+                    <Label >Top</Label>
+                    <TextBox  x:Name="labelTop" VerticalAlignment="Center" Width="40"></TextBox>
+                    <Label >Left</Label>
+                    <TextBox  x:Name="labelLeft" VerticalAlignment="Center" Width="40"></TextBox>
+                </StackPanel>
+                <TextBox x:Name="labelContent" VerticalAlignment="Center" Margin="5">Add Content Here</TextBox>
+                <Button x:Name="addLabel" Margin="0 0 0 0" Click="addLabel_Click">Add Label</Button>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="0 5">
+                <StackPanel Orientation="Horizontal">
+                    <Label >Height</Label>
+                    <TextBox x:Name="rectangleHeight" VerticalAlignment="Center" Width="40"></TextBox>
+                    <Label >Width</Label>
+                    <TextBox x:Name="rectangleWidth" VerticalAlignment="Center" Width="40"></TextBox>
+                    <Label >Top</Label>
+                    <TextBox  x:Name="rectangleTop" VerticalAlignment="Center" Width="40"></TextBox>
+                    <Label >Left</Label>
+                    <TextBox  x:Name="rectangleLeft" VerticalAlignment="Center" Width="40"></TextBox>
+                </StackPanel>
+                <TextBox x:Name="rectangleContent" VerticalAlignment="Center" Margin="5">Add Content Here</TextBox>
+                <Button x:Name="addRectangle" Margin="0 0 0 0" Click="addRectangle_Click">Add Rectangle</Button>
+            </StackPanel>
+            <!--//-->
+
+
+        </StackPanel>
+    </Grid>
 </Window>
