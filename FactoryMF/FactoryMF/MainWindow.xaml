@@ -16,19 +16,23 @@
                 <RowDefinition Height="7*"/>
                 <RowDefinition Height="3*"/>
             </Grid.RowDefinitions>
-            <StackPanel Orientation="Horizontal" Margin="10" Width="200" Height="80" Grid.Row="1">
-                <StackPanel>
-                    <Label FontWeight="Bold">Select a Language</Label>
-                    <RadioButton IsChecked="True">C#</RadioButton>
-                    <RadioButton>HTML</RadioButton>
-                </StackPanel>
-                <Button x:Name="CreateButton"
+            <StackPanel Orientation="Vertical" Grid.Row="1" Margin="0,1.5,0,-1.5">
+                    <Button x:Name="removeButton" Height="30" Width="60" Background="Aqua" Click="removeButton_Click"> Remove
+                    </Button>
+                <StackPanel Orientation="Horizontal" Margin="8,5,0,-15.5" Width="200" Height="80">
+                    <StackPanel>
+                        <Label FontWeight="Bold">Select a Language</Label>
+                        <RadioButton x:Name="csharp" IsChecked="True">C#</RadioButton>
+                        <RadioButton x:Name="html">HTML</RadioButton>
+                    </StackPanel>
+                    <Button x:Name="CreateButton"
                     Content="Create"
                     Height="30"
                     Width="60"
                     Margin="10"
                     Click="CreateButton_Click"
                     Background="Chocolate"/>
+                </StackPanel>
             </StackPanel>
             <ListBox x:Name="OurListBox"></ListBox>
         </Grid>
@@ -40,9 +44,9 @@
                     <Label >Width</Label>
                     <TextBox x:Name="textBoxWidth" VerticalAlignment="Center" Width="40"></TextBox>
                     <Label >Top</Label>
-                    <TextBox  x:Name="textBoxTop" VerticalAlignment="Center" Width="40"></TextBox>
+                    <TextBox  x:Name="textBoxTop" VerticalAlignment="Center" Width="40">0</TextBox>
                     <Label >Left</Label>
-                    <TextBox  x:Name="textBoxLeft" VerticalAlignment="Center" Width="40"></TextBox>
+                    <TextBox  x:Name="textBoxLeft" VerticalAlignment="Center" Width="40">0</TextBox>
                 </StackPanel>
                 <TextBox x:Name="textBoxContent" VerticalAlignment="Center" Margin="5">Add Content Here</TextBox>
                 <Button x:Name="addTextBox" Margin="0 0 0 0" Click="addTextBox_Click">Add Textbox</Button>
@@ -54,9 +58,9 @@
                     <Label >Width</Label>
                     <TextBox x:Name="circleWidth" VerticalAlignment="Center" Width="40"></TextBox>
                     <Label >Top</Label>
-                    <TextBox  x:Name="circleTop" VerticalAlignment="Center" Width="40"></TextBox>
+                    <TextBox  x:Name="circleTop" VerticalAlignment="Center" Width="40">0</TextBox>
                     <Label >Left</Label>
-                    <TextBox  x:Name="circleLeft" VerticalAlignment="Center" Width="40"></TextBox>
+                    <TextBox  x:Name="circleLeft" VerticalAlignment="Center" Width="40">0</TextBox>
                 </StackPanel>
                 <TextBox x:Name="circleContent" VerticalAlignment="Center" Margin="5">Add Content Here</TextBox>
                 <Button x:Name="addCircle" Margin="0 0 0 0" Click="addCircle_Click">Add Circle</Button>
@@ -68,9 +72,9 @@
                     <Label >Width</Label>
                     <TextBox x:Name="labelWidth" VerticalAlignment="Center" Width="40"></TextBox>
                     <Label >Top</Label>
-                    <TextBox  x:Name="labelTop" VerticalAlignment="Center" Width="40"></TextBox>
+                    <TextBox  x:Name="labelTop" VerticalAlignment="Center" Width="40">0</TextBox>
                     <Label >Left</Label>
-                    <TextBox  x:Name="labelLeft" VerticalAlignment="Center" Width="40"></TextBox>
+                    <TextBox  x:Name="labelLeft" VerticalAlignment="Center" Width="40">0</TextBox>
                 </StackPanel>
                 <TextBox x:Name="labelContent" VerticalAlignment="Center" Margin="5">Add Content Here</TextBox>
                 <Button x:Name="addLabel" Margin="0 0 0 0" Click="addLabel_Click">Add Label</Button>
@@ -82,9 +86,9 @@
                     <Label >Width</Label>
                     <TextBox x:Name="rectangleWidth" VerticalAlignment="Center" Width="40"></TextBox>
                     <Label >Top</Label>
-                    <TextBox  x:Name="rectangleTop" VerticalAlignment="Center" Width="40"></TextBox>
+                    <TextBox  x:Name="rectangleTop" VerticalAlignment="Center" Width="40">0</TextBox>
                     <Label >Left</Label>
-                    <TextBox  x:Name="rectangleLeft" VerticalAlignment="Center" Width="40"></TextBox>
+                    <TextBox  x:Name="rectangleLeft" VerticalAlignment="Center" Width="40">0</TextBox>
                 </StackPanel>
                 <TextBox x:Name="rectangleContent" VerticalAlignment="Center" Margin="5">Add Content Here</TextBox>
                 <Button x:Name="addRectangle" Margin="0 0 0 0" Click="addRectangle_Click">Add Rectangle</Button>
