@@ -8,6 +8,11 @@ namespace FactoryMF.FactroyFloor
 {
     abstract public class Languages
     {
+        public Languages Language(string s)
+        {
+            Languages l = GetLanguage(s);
+            return l;
+        }
         abstract protected Languages GetLanguage(string language);
     }
 }

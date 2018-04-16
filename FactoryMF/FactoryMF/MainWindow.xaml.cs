@@ -1,9 +1,4 @@
 ﻿using FactoryMF.FactroyFloor;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -28,8 +23,8 @@ namespace FactoryMF
         private Languages l;
         private void CreateButton_Click(object sender, RoutedEventArgs e)
         {
-            Language l = languageFactory.create(select.type);
-            l.generateSource();
+            string s = SelectedLanguage.SelectedValue.ToString();
+            l = l.Language(s);
         }
         private void addTextBox_Click(object sender, RoutedEventArgs e)
         {
