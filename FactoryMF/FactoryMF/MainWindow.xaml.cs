@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using FactoryMF.FactroyFloor;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
@@ -14,11 +15,11 @@ namespace FactoryMF
         {
             InitializeComponent();
         }
-        //private Languages l;
+        private Languages l;
         private void CreateButton_Click(object sender, RoutedEventArgs e)
         {
-            //    Language l = languageFactory.create(select.type);
-            //    l.generateSource();
+            string s = SelectedLanguage.SelectedValue.ToString();
+            l = l.Language(s);
         }
         private void addTextBox_Click(object sender, RoutedEventArgs e)
         {

@@ -8,5 +8,9 @@ namespace FactoryMF.FactroyFloor
 {
     public class CSharp : Languages
     {
+        protected override Languages GetLanguage(string language)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
