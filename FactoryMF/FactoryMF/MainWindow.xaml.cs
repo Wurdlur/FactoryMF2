@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FactoryMF.FactroyFloor;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,23 +25,12 @@ namespace FactoryMF
         {
             InitializeComponent();
         }
-
+        private Languages l;
         private void CreateButton_Click(object sender, RoutedEventArgs e)
         {
-            if(csharp.IsChecked == true)
-            {
-                //kill myself
-            }else if(html.IsChecked == true)
-            {
-                //kill urself
-            }
-            else
-            {
-                //kill everyone
-            } 
-
+            Language l = languageFactory.create(select.type);
+            l.generateSource();
         }
-
         private void addTextBox_Click(object sender, RoutedEventArgs e)
         {
             TextBox tb = new TextBox();
