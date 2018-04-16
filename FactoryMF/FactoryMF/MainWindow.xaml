@@ -22,8 +22,11 @@
                 <StackPanel Orientation="Horizontal" Margin="8,5,0,-15.5" Width="200" Height="80">
                     <StackPanel>
                         <Label FontWeight="Bold">Select a Language</Label>
-                        <RadioButton x:Name="csharp" IsChecked="True">C#</RadioButton>
-                        <RadioButton x:Name="html">HTML</RadioButton>
+                        <ComboBox Text="Is not open">
+                            <ComboBoxItem MouseMove="cbi1_MouseMove" Name="cbi1">C#</ComboBoxItem>
+                            <ComboBoxItem MouseMove="cbi2_MouseMove" Name="cbi2">HTML</ComboBoxItem>
+                        </ComboBox>
+
                     </StackPanel>
                     <Button x:Name="CreateButton"
                     Content="Create"
