@@ -1,7 +1,12 @@
 ﻿using FactoryMF.FactroyFloor;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace FactoryMF
@@ -69,16 +74,6 @@ namespace FactoryMF
         private void removeButton_Click(object sender, RoutedEventArgs e)
         {
             OurListBox.Items.RemoveAt(0);
-        }
-
-        private void cbi1_MouseMove(object sender, System.Windows.Input.MouseEventArgs e)
-        {
-
-        }
-
-        private void cbi2_MouseMove(object sender, System.Windows.Input.MouseEventArgs e)
-        {
-
         }
     }
 }
