@@ -31,8 +31,7 @@ namespace FactoryMF.FactroyFloor
             File.WriteAllText(@"C:\Users\John\Documents\GitHub\FactoryMF2\FactoryMF\FactoryMF\TextFiles", s);
             for(int i = 0; i < ourListBox.Items.Count; i++)
             {
-                using(StreamWriter file =
-                    new StreamWriter(@"C: \Users\John\Documents\GitHub\FactoryMF2\FactoryMF\FactoryMF\TextFiles", true))
+                using(StreamWriter file = new StreamWriter(@"C: \Users\John\Documents\GitHub\FactoryMF2\FactoryMF\FactoryMF\TextFiles\CSharp/txt", true))
                 {
                     Type aType = ourListBox.Items[i].GetType();
                     if (aType == typeof(TextBox))
@@ -67,6 +66,11 @@ namespace FactoryMF.FactroyFloor
                         file.WriteLine($"<Rectangle Width=\"{w}\" Height=\"{h}\" Margin=\"{d}, {l}, 0, 0\" Stroke=\"Red\" StrokeThickness=\"5\"><Rectangle>");
                     }
                 }
+            }
+            using (StreamWriter file = new StreamWriter(@"C: \Users\John\Documents\GitHub\FactoryMF2\FactoryMF\FactoryMF\TextFiles\CSharp.txt", true))
+            {
+                file.WriteLine(@"</Grid> /r/n
+                                </Window> ");
             }
         }
     }
