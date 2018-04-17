@@ -74,5 +74,15 @@ namespace FactoryMF
         {
             OurListBox.Items.RemoveAt(0);
         }
+
+        private void cbi1_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void cbi2_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
