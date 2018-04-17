@@ -20,6 +20,7 @@ namespace FactoryMF
         {
             string s = SelectedLanguage.SelectedValue.ToString();
             l = l.Language(s);
+            l.GenerateCode(OurListBox);
         }
         private void addTextBox_Click(object sender, RoutedEventArgs e)
         {

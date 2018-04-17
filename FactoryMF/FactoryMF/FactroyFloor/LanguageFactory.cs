@@ -7,12 +7,22 @@ using System.Windows.Controls;
 
 namespace FactoryMF.FactroyFloor
 {
-    public class HTML : Languages
+    public class LanguageFactory : Languages
     {
         protected override Languages GetLanguage(string language)
         {
-            HTML h = new HTML();
-            return h;
+            switch (language)
+            {
+                case "C#":
+                    CSharp c = new CSharp();
+                    return c;
+                case "HTML":
+                    HTML h = new HTML();
+                    return h;
+                default:
+                    CSharp c2 = new CSharp();
+                    return c2;
+            }
         }
         internal override void GenerateCode(ListBox ourListBox)
         {
