@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace FactoryMF.FactroyFloor
 {
@@ -14,5 +15,6 @@ namespace FactoryMF.FactroyFloor
             return l;
         }
         abstract protected Languages GetLanguage(string language);
+        internal abstract void GenerateCode(ListBox ourListBox);
     }
 }
