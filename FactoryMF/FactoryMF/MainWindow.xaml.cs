@@ -65,6 +65,7 @@ namespace FactoryMF
             Rectangle tb = new Rectangle();
             //tb.Text = textBoxContent.Text;
             tb.Fill = Brushes.Black;
+            tb.StrokeThickness = 5;
             tb.Height = double.Parse(rectangleHeight.Text);
             tb.Width = double.Parse(rectangleWidth.Text);
             tb.Margin = new Thickness(double.Parse(rectangleLeft.Text), double.Parse(rectangleTop.Text), 0, 0);

@@ -64,6 +64,7 @@
     </Compile>
     <Compile Include="FactroyFloor\CSharp.cs" />
     <Compile Include="FactroyFloor\HTML.cs" />
+    <Compile Include="FactroyFloor\LanguageFactory.cs" />
     <Compile Include="FactroyFloor\Languages.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

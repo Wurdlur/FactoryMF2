@@ -44,6 +44,7 @@
                 <StackPanel Orientation="Horizontal">
                     <Label >Height</Label>
                     <TextBox x:Name="textBoxHeight" VerticalAlignment="Center" Width="40"></TextBox>
+                    <Ellipse></Ellipse>
                     <Label >Width</Label>
                     <TextBox x:Name="textBoxWidth" VerticalAlignment="Center" Width="40"></TextBox>
                     <Label >Top</Label>
