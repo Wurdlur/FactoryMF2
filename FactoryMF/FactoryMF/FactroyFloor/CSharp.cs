@@ -12,10 +12,9 @@ namespace FactoryMF.FactroyFloor
 {
     public class CSharp : Languages
     {
-        protected override Languages GetLanguage(string language)
+        internal override Languages GetLanguage(string language)
         {
-            CSharp s = new CSharp();
-            return s;
+            throw new NotImplementedException();
         }
         internal override void GenerateCode(ListBox ourListBox)
         {

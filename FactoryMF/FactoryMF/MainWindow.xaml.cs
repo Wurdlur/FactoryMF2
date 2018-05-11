@@ -20,12 +20,11 @@ namespace FactoryMF
         {
             InitializeComponent();
         }
-        private Languages l;
+        private LanguageFactory l = new LanguageFactory();
         private void CreateButton_Click(object sender, RoutedEventArgs e)
         {
             string s = SelectedLanguage.SelectedValue.ToString();
-            l = l.Language(s);
-            l.GenerateCode(OurListBox);
+            l.GetLanguage(s);
         }
         private void addTextBox_Click(object sender, RoutedEventArgs e)
         {

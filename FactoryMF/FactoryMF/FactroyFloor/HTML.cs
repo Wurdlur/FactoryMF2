@@ -10,10 +10,9 @@ namespace FactoryMF.FactroyFloor
 {
     public class HTML : Languages
     {
-        protected override Languages GetLanguage(string language)
+        internal override Languages GetLanguage(string language)
         {
-            HTML h = new HTML();
-            return h;
+            throw new NotImplementedException();
         }
         internal override void GenerateCode(ListBox ourListBox)
         {

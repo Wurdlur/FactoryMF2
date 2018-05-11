@@ -9,7 +9,7 @@ namespace FactoryMF.FactroyFloor
 {
     public class LanguageFactory : Languages
     {
-        protected override Languages GetLanguage(string language)
+        internal override Languages GetLanguage(string language)
         {
             switch (language)
             {
